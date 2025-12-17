@@ -92,11 +92,12 @@ It uses OCR (Optical Character Recognition) 🧠 and intelligent date inference 
 
 📤 _Output:_
 
-{
-  "Manufacturing Date": "2024-06-17",
-  "Expiry Date": "2026-06-17",
-  "Safety Status": "Safe to use"
-}
+  __Manufacturing Date:__ 2024-06-17,
+  
+  __Expiry Date:__ 2026-06-17,
+  
+  __Safety Status:__ The medicine is safe to use
+
 
 
 
