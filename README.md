@@ -6,61 +6,95 @@ It uses OCR (Optical Character Recognition) and intelligent date inference to ex
 
 🚀 Features
 
-📸 Image-based scanning of product labels
+-- 📸 Image-based scanning of product labels
 
-🔍 Robust OCR using EasyOCR & Tesseract
+-- 🔍 Robust OCR using EasyOCR & Tesseract
 
-📅 Smart date extraction (handles noisy OCR, missing years, and multiple formats)
+-- 📅 Smart date extraction (handles noisy OCR, missing years, and multiple formats)
 
-🧠 Date inference logic for real-world labels
+-- 🧠 Date inference logic for real-world labels
 
-✅ Automatic safety check (Safe / Expired / Unknown)
+-- ✅ Automatic safety check (Safe / Expired / Unknown)
 
-🌐 Interactive web interface using Gradio
+-- 🌐 Interactive web interface using Gradio
 
-🧩 Modular backend for easy API integration
+-- 🧩 Modular backend for easy API integration
 
 🧠 How It Works
 
-Upload a product image
+-- 📸 Upload a product image
 
-The image is processed using OCR
+-- The image is processed using OCR
 
-Manufacturing & expiry dates are:
+-- Manufacturing & expiry dates are:
 
-Extracted using regex
+-- Extracted using regex
 
-Cleaned and normalized
+-- Cleaned and normalized
 
-Inferred when partially missing
+-- Inferred when partially missing
 
 The system compares the expiry date with today
 
 A safety status is returned
 
 🏗️ Tech Stack
-Backend
+--> Backend
 
-Python
+-- Python
 
-EasyOCR
+-- EasyOCR
 
-DateParser
+-- DateParser
 
-NumPy
+-- NumPy
 
-Pillow
+-- Pillow
 
-Frontend
+--> Frontend
 
-Gradio (Web UI)
+-- Gradio (Web UI)
 
-Pytesseract
+-- Pytesseract
 
-Deployment & Tools
+--> Deployment & Tools
 
-Google Colab
+-- Google Colab
 
-Ngrok (for exposing backend & frontend)
+-- Ngrok (for exposing backend & frontend)
 
-GitHub
+-- GitHub
+
+📂 Project Structure
+
+Safety-Scan/
+│
+├── backend.ipynb        # OCR, date extraction, safety logic
+├── frontend.ipynb       # Gradio-based user interface
+├── README.md            # Project documentation
+
+
+⚠️ Safety Logic
+
+✔ Safe to use → Today ≤ Expiry Date
+
+❌ Not safe to use → Today > Expiry Date
+
+❓ Unknown → Expiry date not detected
+
+🧪 Example Output
+
+Input :
+
+<img width="225" height="212" alt="Screenshot 2025-09-27 142817" src="https://github.com/user-attachments/assets/5fe6d3eb-3517-4c09-a8b6-f0f280a827fb" />
+
+Output :
+
+{
+  "Manufacturing Date": "2024-06-17",
+  "Expiry Date": "2026-06-17",
+  "Safety Status": "Safe to use"
+}
+
+
+
