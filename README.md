@@ -1,9 +1,9 @@
-### Safety-Scan
-🛡️ Safety Scan
+### 🛡️ SafetyScan
+
 Safety Scan is an AI-powered application that analyzes product label images 🏷️ to determine whether a product is safe to use or expired ⏳.
 It uses OCR (Optical Character Recognition) 🧠 and intelligent date inference 📅 to extract manufacturing and expiry dates—even when labels are unclear or partially unreadable.
 
-##🚀 Features ✨
+🚀 __Features__ ✨
 
 📸 Image-based scanning of product labels
 
@@ -19,7 +19,7 @@ It uses OCR (Optical Character Recognition) 🧠 and intelligent date inference 
 
 🧩 Modular backend for easy API integration
 
-##🧠 How It Works ⚙️
+🧠 __How It Works__ ⚙️
 
 📸 Upload a product image
 
@@ -37,8 +37,9 @@ It uses OCR (Optical Character Recognition) 🧠 and intelligent date inference 
 
 🛡️ A safety status is returned
 
-##🏗️ Tech Stack 🧰
-#🖥️ Backend
+🏗️ __Tech Stack__ 🧰
+
+🖥️ _Backend_
 
 🐍 Python
 
@@ -50,13 +51,13 @@ It uses OCR (Optical Character Recognition) 🧠 and intelligent date inference 
 
 🖼️ Pillow
 
-#🎨 Frontend
+🎨 _Frontend_
 
 🌐 Gradio (Web UI)
 
 🔎 Pytesseract
 
-#🚀 Deployment & Tools
+🚀 _Deployment & Tools_
 
 ☁️ Google Colab
 
@@ -65,7 +66,7 @@ It uses OCR (Optical Character Recognition) 🧠 and intelligent date inference 
 🐙 GitHub
 
 
-##📂 Project Structure
+📂 __Project Structure__
 
 🛡️Safety-Scan
 │
@@ -74,7 +75,7 @@ It uses OCR (Optical Character Recognition) 🧠 and intelligent date inference 
 ├── 📘README.md            # Project documentation
 
 
-##⚠️ Safety Logic 🛑
+⚠️ __Safety Logic__ 🛑
 
 ✔ Safe to use → 🟢 Today ≤ Expiry Date
 
@@ -82,12 +83,12 @@ It uses OCR (Optical Character Recognition) 🧠 and intelligent date inference 
 
 ❓ Unknown → ⚪ Expiry date not detected
 
-##🧪 Example Output 🔬
-#📥 Input:
+🧪 __Example Output__ 🔬
+📥 _Input:_
 
 <img width="225" height="212" alt="Screenshot 2025-09-27 142817" src="https://github.com/user-attachments/assets/5fe6d3eb-3517-4c09-a8b6-f0f280a827fb" />
 
-#📤 Output:
+📤 _Output:_
 
 {
   "Manufacturing Date": "2024-06-17",
