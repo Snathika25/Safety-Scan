@@ -69,9 +69,11 @@ It uses OCR (Optical Character Recognition) 🧠 and intelligent date inference 
 📂 __Project Structure__
 
 🛡️Safety-Scan
-│
+
 ├── 🧠backend.ipynb        # OCR, date extraction, safety logic
+
 ├── 🌐frontend.ipynb       # Gradio-based user interface
+
 ├── 📘README.md            # Project documentation
 
 
